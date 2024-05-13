@@ -1,0 +1,30 @@
+:host ::ng-deep {
+  .navbar {
+    background-color: #396e41;
+    background-image: url(../../../assets/images/nav\ bg.png);
+    background-position: center center;
+    background-size: cover;
+
+    ul {
+      li {
+        font-weight: 600;
+        a {
+          color: white;
+        }
+      }
+    }
+    .active {
+      color: white;
+      border-bottom: 1px solid #fff400;
+    }
+    .butn {
+      width: 140px;
+      border-radius: 17px;
+      color: #396e41;
+      font-weight: 700;
+    }
+  }
+  .lang {
+    color: white;
+  }
+}

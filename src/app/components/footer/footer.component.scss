@@ -1,0 +1,40 @@
+
+ .footer {
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(24, 61, 54, 1),
+    rgb(173, 199, 115)
+  );
+
+  .logo-box {
+    display: flex;
+    justify-content: center;
+  }
+  p {
+    color: white;
+    font-size: 19px;
+  }
+  li {
+    color: white;
+    font-size: 14px;
+    padding-top: 12px;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+.mini-footer {
+    background-color: #467157;
+    padding: 15px;
+
+    a {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+}
