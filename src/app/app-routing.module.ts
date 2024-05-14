@@ -5,8 +5,7 @@ import { DataCatalogComponent } from './components/data-catalog/data-catalog.com
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-{path:"data-catalog", component: DataCatalogComponent},
-  
+  { path: 'data-catalog', component: DataCatalogComponent },
 ];
 
 @NgModule({

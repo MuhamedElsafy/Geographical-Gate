@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
+
 @Component({
   selector: 'app-data-catalog',
   templateUrl: './data-catalog.component.html',
@@ -12,6 +13,7 @@ export class DataCatalogComponent implements OnInit {
 
     home: MenuItem | undefined;
 
+    value: number = 5;
     ngOnInit() {
         this.items = [ { label: 'الصفحه الرئيسيه', route:'home' }, { label: 'كاتلوج البيانات' , route:'data-catalog'},];
     }

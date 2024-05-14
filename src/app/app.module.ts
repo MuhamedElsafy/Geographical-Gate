@@ -12,6 +12,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { DataCatalogComponent } from './components/data-catalog/data-catalog.component';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { RouterModule } from '@angular/router';
+import { TagModule } from 'primeng/tag';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
+import { RatingModule } from 'primeng/rating';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +33,12 @@ import { RouterModule } from '@angular/router';
     IconFieldModule,
     InputIconModule,
     BreadcrumbModule,
-    RouterModule
+    RouterModule,
+    TagModule,
+    InputTextModule,
+    FormsModule,
+    RatingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
