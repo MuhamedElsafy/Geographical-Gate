@@ -6,6 +6,13 @@
   background-color: #f0f4f6;
 }
 :host ::ng-deep {
+  .p-breadcrumb {
+    background-color: rgba(116, 168, 124, 1);
+    padding: 1rem;
+    border: 0px solid #e5e7eb;
+    border-radius: 0px;
+  }
+
   .items {
     background-color: white;
     padding: 8px;
@@ -63,8 +70,9 @@
     margin: 15px 15px 0px 0px;
 
     span {
-      color: rgba(41, 59, 64, 1);
-      font-size: 16px;
+      color: black;
+      font-size: 15px;
+      font-weight: 600;
     }
     .info {
       background-color: white;
@@ -110,23 +118,22 @@
       }
       .p-tag-success {
         background-color: transparent;
-        border: 1px solid rgba(97, 136, 48, 1) ;
-        color:rgba(97, 136, 48, 1) ;
+        border: 1px solid rgba(97, 136, 48, 1);
+        color: rgba(97, 136, 48, 1);
       }
       .p-tag-info {
         background-color: transparent;
-        border: 1px solid rgba(45, 101, 84, 1) ;
-        color:rgba(45, 101, 84, 1) ;
+        border: 1px solid rgba(45, 101, 84, 1);
+        color: rgba(45, 101, 84, 1);
       }
       .p-tag-secondary {
         background-color: transparent;
-        border: 1px solid ;
+        border: 1px solid;
       }
       .p-tag-warning {
         background-color: transparent;
-        border: 1px solid ;
+        border: 1px solid;
       }
-
     }
   }
 }

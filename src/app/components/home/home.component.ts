@@ -12,6 +12,8 @@ import { NgForOf } from '@angular/common';
   imports: [InputIconModule, IconFieldModule, FormsModule, NgForOf],
 })
 export class HomeComponent {
+  
+  constructor() {}
 
   mainTask: string[] = [
     'الاشجار(Tree)',
@@ -24,7 +26,7 @@ export class HomeComponent {
     'كشف التغيير (Change Detection)',
   ];
 
-  mainTask2 : string[]= [
+  mainTask2: string[] = [
     'التصنيفات (Classifications)',
     'حرائق الغابات (Wildfire)',
     'مستكشف الغطاء الأرضي (Land Cover)',
@@ -33,5 +35,9 @@ export class HomeComponent {
     'منصة التشجير (Afforestation Platform)',
     'منصة NCVC الجغرافية',
     'تطبيق تحليل NCVC',
-  ]
+  ];
+
+ 
+
+  
 }

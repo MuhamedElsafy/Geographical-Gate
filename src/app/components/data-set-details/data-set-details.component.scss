@@ -1,0 +1,209 @@
+:host ::ng-deep {
+  .main {
+    background-color: #f8fafa;
+
+    .cardd {
+      background-color: white;
+      border-radius: 12px;
+
+      img {
+        width: 25%;
+      }
+      h6 {
+        font-family: Bigshot One;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 25.15px;
+        padding-right: 15px;
+      }
+      p {
+        font-family: Bigshot One;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #6a7a7e;
+        padding-right: 15px;
+      }
+    }
+    .cardd2 {
+      background-color: white;
+      border-radius: 12px;
+
+      span {
+        font-family: Bigshot One;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 25.15px;
+        text-align: right;
+      }
+
+      .social-icon {
+        margin-top: 20px;
+        background-color: #1da1f2;
+        text-align: center;
+        width: 40px;
+        border-radius: 5px;
+        color: white;
+        margin-left: 10px;
+
+        i {
+          line-height: 0px !important;
+          font-size: 18px;
+        }
+      }
+      .facebook {
+        background-color: #3c579e;
+      }
+      .linkedin {
+        background-color: #007bb5;
+      }
+      .whatsapp {
+        background-color: #28d246;
+      }
+    }
+    .cardd3 {
+      background-color: white;
+      border-radius: 12px;
+
+      span {
+        font-family: Bigshot One;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 25.15px;
+        text-align: right;
+        color: #293b40;
+      }
+
+      .rating-star {
+        .p-rating-icon-active {
+          width: 24px;
+          height: 24px;
+          color: gold;
+        }
+      }
+    }
+    .textt {
+      h5 {
+        font-family: Bigshot One;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 33.54px;
+        text-align: right;
+        color: #293b40;
+      }
+      p {
+        font-family: Bigshot One;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: right;
+        color: #6a7a7e;
+      }
+    }
+    .data {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+      span {
+        font-family: Bigshot One;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: right;
+        padding-right: 5px;
+      }
+    }
+    .data2 {
+      span {
+        font-family: Bigshot One;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18.86px;
+        text-align: right;
+        color: #6a7a7e;
+      }
+    }
+    .box {
+      background-color: #ffffff;
+      height: 73px;
+      border-radius: 12px;
+      box-shadow: black inset 10px;
+      display: flex;
+      align-items: center;
+    
+
+      .xlsx {
+        width: 72px;
+        height: 32px;
+        border-radius: 16px;
+        border: 1px solid #618830;
+        text-align: center;
+        color: #618830;
+      }
+      .csv {
+         width: 72px;
+         height: 32px;
+         border-radius: 16px;
+         border: 1px solid #2D6554;
+         text-align: center;
+         color: #2D6554;
+      }
+      .json {
+         width: 72px;
+         height: 32px;
+         border-radius: 16px;
+         border: 1px solid #387CAD;
+         text-align: center;
+         color: #387CAD;
+      }
+      .XML {
+         width: 72px;
+         height: 32px;
+         border-radius: 16px;
+         border: 1px solid #E87E15;
+         text-align: center;
+         color: #E87E15;
+      }
+      p {
+        font-family: Bigshot One;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18.86px;
+        text-align: right;
+        color: #6a7a7e;
+        padding-top: 20px;
+        padding-right: 20px;
+      }
+    }
+    .box-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 200px;
+      .butn1 {
+         background-color: #618830;
+         color: white;
+         border-radius: 20px;
+         border: 0;
+         padding: 6px 12px;
+      }
+      .butn2 {
+         background-color: white;
+         color: #618830;
+         border-radius: 20px;
+         border:1px solid #618830;
+         padding: 6px 12px;
+      }
+    }
+    .box-map {
+     background-image: url('../../../assets/images/map.png');
+     background-position: center center;
+     background-size: cover;
+     height: 430.25px;
+     border-radius: 10px;
+    }
+  }
+}

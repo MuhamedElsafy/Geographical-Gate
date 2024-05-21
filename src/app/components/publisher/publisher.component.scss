@@ -1,0 +1,76 @@
+.publisher {
+  background-color: #f8fafa;
+
+  .tools {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: white;
+    .tol {
+      font-size: 14px;
+      font-family: Bigshot One;
+      width: 33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        padding-right: 4px;
+        font-family: Bigshot One;
+      }
+    }
+    .tol3 {
+      border-left: 1px solid rgb(0, 0, 0, 0.2);
+      border-right: 1px solid rgb(0, 0, 0, 0.2);
+      padding: 7px;
+      font-family: Bigshot One;
+    }
+  }
+
+  .titlle {
+    font-family: Bigshot One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: right;
+    color: #293b40;
+  }
+
+  .cartona {
+    background-color: white;
+    border-radius: 10px;
+
+    h5 {
+      font-family: Bigshot One;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 25.15px;
+      color: #293b40;
+      padding-top: 5px;
+    }
+    p {
+      font-family: Bigshot One;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14.67px;
+      color: #6a7a7e;
+    }
+  }
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .iconn {
+      align-items: center;
+      display: flex;
+      span {
+        font-family: DIN Next LT Arabic;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 35.28px;
+      }
+    }
+  }
+}
