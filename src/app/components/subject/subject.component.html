@@ -1,0 +1,377 @@
+<p-breadcrumb class="max-w-full" [model]="items">
+    <ng-template pTemplate="item" let-item>
+        <ng-container *ngIf="item.route; else elseBlock">
+            <a [routerLink]="item.route" class="p-menuitem-link">
+                <span class="text-primary font-semibold">{{ item.label }}</span>
+            </a>
+        </ng-container>
+    </ng-template>
+</p-breadcrumb>
+
+
+
+<div class="grid box p-8">
+
+    <div class="col-2">
+        <div class="main-sup">
+            <img src="../../../assets/images/MoE_Logo_H2-01 1.png" class="d-block" alt="">
+            <span class="supject">وزارة الطاقة</span>
+            <p>شرح او تعريف مبسط عن الجهة او المكان الذي قام بأدراج البيانات في تلك المساحة مكون من سطرين فقط</p>
+            <div class="iconns flex justify-content-around ">
+                <div class="down-i">
+                    <i class="pi pi-download"></i>
+                    <span>8562</span>
+                </div>
+                <div class="down-i">
+                   <i class="pi pi-sitemap"></i>
+                    <span>12500</span>
+                </div>
+            </div>
+        </div>
+            <h6 class="pt-1" style="color: rgb(0, 0, 0,0.7);">التصنيفات</h6>
+        <div class="items mt-3">
+            <span class="title">الناشرون</span>
+            <div class="choose">
+                <ul>
+                    <li>وزارة الطاقه <p-tag severity="success" value="255" /></li>
+                    <li>وزارة الطاقه <p-tag severity="success" value="255" /></li>
+                    <li>وزارة الطاقه <p-tag severity="success" value="255" /></li>
+                    <li>وزارة الطاقه <p-tag severity="success" value="255" /></li>
+                </ul>
+                <i class=" pi pi-angle-double-down" style="font-size: 1.5rem ; padding-top: 10px;"></i>
+            </div>
+        </div>
+
+        <div class="items mt-3">
+            <span class="title">الناشرون</span>
+            <div class="choose">
+                <ul>
+                    <li>وزارة الطاقه <p-tag severity="success" value="255" /></li>
+                    <li>وزارة الطاقه <p-tag severity="success" value="255" /></li>
+                    <li>وزارة الطاقه <p-tag severity="success" value="255" /></li>
+                    <li>وزارة الطاقه <p-tag severity="success" value="255" /></li>
+                </ul>
+                <i class=" pi pi-angle-double-down" style="font-size: 1.5rem ; padding-top: 10px;"></i>
+            </div>
+        </div>
+
+        <div class="items mt-3">
+            <span class="title">الناشرون</span>
+            <div class="choose">
+                <ul>
+                    <li>وزارة الطاقه <p-tag severity="success" value="255" /></li>
+                    <li>وزارة الطاقه <p-tag severity="success" value="255" /></li>
+                    <li>وزارة الطاقه <p-tag severity="success" value="255" /></li>
+                    <li>وزارة الطاقه <p-tag severity="success" value="255" /></li>
+                </ul>
+                <i class=" pi pi-angle-double-down" style="font-size: 1.5rem ; padding-top: 10px;"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-10">
+        <div class="grid">
+
+            <div class="col-8 pr-3">
+                <p-iconField iconPosition="right">
+                    <p-inputIcon styleClass="pi pi-search" />
+                    <input type="text" pInputText style="width: 95%; padding: 5px;" />
+                </p-iconField>
+            </div>
+
+            <div class="col-4">
+                <div class="tools">
+                    <div class="tol">
+                        <i class=" pi  pi-sort-amount-down"></i>
+                        <span>ترتيب حسب</span>
+                    </div>
+                    <div class="tol tol3">
+                        <i class=" pi  pi-list"></i>
+                        <span> قائمه</span>
+                    </div>
+                    <div class="tol">
+                        <i class=" pi  pi-clone"></i>
+                        <span> ملائمه</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" informtion">
+                <span>مجموعة البيانات : 25</span>
+
+                <div class="grid info mt-3">
+                    <div class="col-1">
+                        <img src="../../../assets/images/MoE_Logo_H2-01 1.png" alt="">
+                    </div>
+                    <div class="col-11 cartona ">
+
+                        <div class="data1 mb-3">
+                            <h5>عنوان البيانات او الداتا التي تم أدراجها من قبل الجهة يكون في هذه المساحة هنا</h5>
+                            <div class="data1-view">
+                                <span class="ml-3">
+                                    <i class="pi pi-eye"></i>
+                                    85420
+                                </span>
+                                <span>
+                                    <i class="pi pi-download"></i>
+                                    1250
+                                </span>
+                            </div>
+                        </div>
+
+                        <p>شرح او تعريف مبسط عن البيانات او الداتا هنا</p>
+
+                        <span>
+                            <i class="pi  pi-warehouse"></i>
+                            وزارةالطاقة
+                        </span>
+
+                        <div class="rating flex pt-2">
+                            <p-rating [(ngModel)]="value" [readonly]="true" [cancel]="false" />
+                            <span class="pr-1">(4.8)</span>
+                        </div>
+
+                        <div class="date flex justify-content-between">
+
+                            <div class="date1">
+                                <i class="pi pi-calendar pl-1"></i>
+                                <span class="pl-4">1/3/2024</span>
+
+                                <i class="pi pi-calendar pl-1"></i>
+                                <span>26/3/2024</span>
+                            </div>
+
+                            <div class="option">
+                                <p-tag severity="success" value="XLSX" [rounded]="true" />
+                                <p-tag severity="info" value="CSV" [rounded]="true" />
+                                <p-tag severity="secondary" value="JSON" [rounded]="true" />
+                                <p-tag severity="warning" value="XML" [rounded]="true" />
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="grid info mt-3">
+                    <div class="col-1">
+                        <img src="../../../assets/images/MoE_Logo_H2-01 1.png" alt="">
+                    </div>
+                    <div class="col-11 cartona ">
+
+                        <div class="data1 mb-3">
+                            <h5>عنوان البيانات او الداتا التي تم أدراجها من قبل الجهة يكون في هذه المساحة هنا</h5>
+                            <div class="data1-view">
+                                <span class="ml-3">
+                                    <i class="pi pi-eye"></i>
+                                    85420
+                                </span>
+                                <span>
+                                    <i class="pi pi-download"></i>
+                                    1250
+                                </span>
+                            </div>
+                        </div>
+
+                        <p>شرح او تعريف مبسط عن البيانات او الداتا هنا</p>
+
+                        <span>
+                            <i class="pi  pi-warehouse"></i>
+                            وزارةالطاقة
+                        </span>
+
+                        <div class="rating flex pt-2">
+                            <p-rating [(ngModel)]="value" [readonly]="true" [cancel]="false" />
+                            <span class="pr-1">(4.8)</span>
+                        </div>
+
+                        <div class="date flex justify-content-between">
+
+                            <div class="date1">
+                                <i class="pi pi-calendar pl-1"></i>
+                                <span class="pl-4">1/3/2024</span>
+
+                                <i class="pi pi-calendar pl-1"></i>
+                                <span>26/3/2024</span>
+                            </div>
+
+                            <div class="option">
+                                <p-tag severity="success" value="XLSX" [rounded]="true" />
+                                <p-tag severity="info" value="CSV" [rounded]="true" />
+                                <p-tag severity="secondary" value="JSON" [rounded]="true" />
+                                <p-tag severity="warning" value="XML" [rounded]="true" />
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="grid info mt-3">
+                    <div class="col-1">
+                        <img src="../../../assets/images/MoE_Logo_H2-01 1.png" alt="">
+                    </div>
+                    <div class="col-11 cartona ">
+
+                        <div class="data1 mb-3">
+                            <h5>عنوان البيانات او الداتا التي تم أدراجها من قبل الجهة يكون في هذه المساحة هنا</h5>
+                            <div class="data1-view">
+                                <span class="ml-3">
+                                    <i class="pi pi-eye"></i>
+                                    85420
+                                </span>
+                                <span>
+                                    <i class="pi pi-download"></i>
+                                    1250
+                                </span>
+                            </div>
+                        </div>
+
+                        <p>شرح او تعريف مبسط عن البيانات او الداتا هنا</p>
+
+                        <span>
+                            <i class="pi  pi-warehouse"></i>
+                            وزارةالطاقة
+                        </span>
+
+                        <div class="rating flex pt-2">
+                            <p-rating [(ngModel)]="value" [readonly]="true" [cancel]="false" />
+                            <span class="pr-1">(4.8)</span>
+                        </div>
+
+                        <div class="date flex justify-content-between">
+
+                            <div class="date1">
+                                <i class="pi pi-calendar pl-1"></i>
+                                <span class="pl-4">1/3/2024</span>
+
+                                <i class="pi pi-calendar pl-1"></i>
+                                <span>26/3/2024</span>
+                            </div>
+
+                            <div class="option">
+                                <p-tag severity="success" value="XLSX" [rounded]="true" />
+                                <p-tag severity="info" value="CSV" [rounded]="true" />
+                                <p-tag severity="secondary" value="JSON" [rounded]="true" />
+                                <p-tag severity="warning" value="XML" [rounded]="true" />
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="grid info mt-3">
+                    <div class="col-1">
+                        <img src="../../../assets/images/MoE_Logo_H2-01 1.png" alt="">
+                    </div>
+                    <div class="col-11 cartona ">
+
+                        <div class="data1 mb-3">
+                            <h5>عنوان البيانات او الداتا التي تم أدراجها من قبل الجهة يكون في هذه المساحة هنا</h5>
+                            <div class="data1-view">
+                                <span class="ml-3">
+                                    <i class="pi pi-eye"></i>
+                                    85420
+                                </span>
+                                <span>
+                                    <i class="pi pi-download"></i>
+                                    1250
+                                </span>
+                            </div>
+                        </div>
+
+                        <p>شرح او تعريف مبسط عن البيانات او الداتا هنا</p>
+
+                        <span>
+                            <i class="pi  pi-warehouse"></i>
+                            وزارةالطاقة
+                        </span>
+
+                        <div class="rating flex pt-2">
+                            <p-rating [(ngModel)]="value" [readonly]="true" [cancel]="false" />
+                            <span class="pr-1">(4.8)</span>
+                        </div>
+
+                        <div class="date flex justify-content-between">
+
+                            <div class="date1">
+                                <i class="pi pi-calendar pl-1"></i>
+                                <span class="pl-4">1/3/2024</span>
+
+                                <i class="pi pi-calendar pl-1"></i>
+                                <span>26/3/2024</span>
+                            </div>
+
+                            <div class="option">
+                                <p-tag severity="success" value="XLSX" [rounded]="true" />
+                                <p-tag severity="info" value="CSV" [rounded]="true" />
+                                <p-tag severity="secondary" value="JSON" [rounded]="true" />
+                                <p-tag severity="warning" value="XML" [rounded]="true" />
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="grid info mt-3">
+                    <div class="col-1">
+                        <img src="../../../assets/images/MoE_Logo_H2-01 1.png" alt="">
+                    </div>
+                    <div class="col-11 cartona ">
+
+                        <div class="data1 mb-3">
+                            <h5>عنوان البيانات او الداتا التي تم أدراجها من قبل الجهة يكون في هذه المساحة هنا</h5>
+                            <div class="data1-view">
+                                <span class="ml-3">
+                                    <i class="pi pi-eye"></i>
+                                    85420
+                                </span>
+                                <span>
+                                    <i class="pi pi-download"></i>
+                                    1250
+                                </span>
+                            </div>
+                        </div>
+
+                        <p>شرح او تعريف مبسط عن البيانات او الداتا هنا</p>
+
+                        <span>
+                            <i class="pi  pi-warehouse"></i>
+                            وزارةالطاقة
+                        </span>
+
+                        <div class="rating flex pt-2">
+                            <p-rating [(ngModel)]="value" [readonly]="true" [cancel]="false" />
+                            <span class="pr-1">(4.8)</span>
+                        </div>
+
+                        <div class="date flex justify-content-between">
+
+                            <div class="date1">
+                                <i class="pi pi-calendar pl-1"></i>
+                                <span class="pl-4">1/3/2024</span>
+
+                                <i class="pi pi-calendar pl-1"></i>
+                                <span>26/3/2024</span>
+                            </div>
+
+                            <div class="option">
+                                <p-tag severity="success" value="XLSX" [rounded]="true" />
+                                <p-tag severity="info" value="CSV" [rounded]="true" />
+                                <p-tag severity="secondary" value="JSON" [rounded]="true" />
+                                <p-tag severity="warning" value="XML" [rounded]="true" />
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

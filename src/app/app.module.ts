@@ -16,6 +16,14 @@ import { TagModule } from 'primeng/tag';
 import { InputTextModule } from 'primeng/inputtext';
 import { FormsModule } from '@angular/forms';
 import { RatingModule } from 'primeng/rating';
+import { SubjectComponent } from './components/subject/subject.component';
+import { PublisherComponent } from './components/publisher/publisher.component';
+import { SeleSubjectComponent } from './components/sele-subject/sele-subject.component';
+import { DataSetDetailsComponent } from './components/data-set-details/data-set-details.component';
+
+
+
+
 
 
 @NgModule({
@@ -24,6 +32,11 @@ import { RatingModule } from 'primeng/rating';
     NavbarComponent,
     FooterComponent,
     DataCatalogComponent,
+    SubjectComponent,
+    PublisherComponent,
+    SeleSubjectComponent,
+    DataSetDetailsComponent,
+   
     
   ],
   imports: [
