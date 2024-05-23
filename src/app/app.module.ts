@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { PasswordModule } from 'primeng/password';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomeComponent } from './components/home/home.component';
+import { InputOtpModule } from 'primeng/inputotp';
 import { ButtonModule } from 'primeng/button';
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
@@ -20,6 +20,10 @@ import { SubjectComponent } from './components/subject/subject.component';
 import { PublisherComponent } from './components/publisher/publisher.component';
 import { SeleSubjectComponent } from './components/sele-subject/sele-subject.component';
 import { DataSetDetailsComponent } from './components/data-set-details/data-set-details.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { CodeOfRegisterComponent } from './components/code-of-register/code-of-register.component';
+import { ForgetPassComponent } from './components/forget-pass/forget-pass.component';
 
 
 
@@ -36,6 +40,10 @@ import { DataSetDetailsComponent } from './components/data-set-details/data-set-
     PublisherComponent,
     SeleSubjectComponent,
     DataSetDetailsComponent,
+    LoginComponent,
+    RegisterComponent,
+    CodeOfRegisterComponent,
+    ForgetPassComponent,
    
     
   ],
@@ -51,6 +59,8 @@ import { DataSetDetailsComponent } from './components/data-set-details/data-set-
     InputTextModule,
     FormsModule,
     RatingModule,
+    PasswordModule,
+    InputOtpModule,
 
   ],
   providers: [],

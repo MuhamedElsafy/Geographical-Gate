@@ -1,0 +1,29 @@
+<section >
+    <div class="login">
+
+        <div class="headerForm">
+            <h3>ادخل الكود</h3>
+            <h5> يرجي ادخال الكود الذي تم ارسالة علي بريدك الالكتروني لتاكيد البريد الالكتروني الخاص بك </h5>  
+        </div>
+
+    <form >
+        <div class="loginform">
+            <div class="userName">
+                <p-inputOtp class="mb-4 text-center	flex justify-content-center	" [(ngModel)]="value" [mask]="true" />
+                <h6 class="text-center mb-3 mt-1">  لم تستلم الكود بعد
+                    <a routerLink="/">   اعادة ارسال الكود  </a>
+                </h6> 
+            </div>
+
+
+
+            <a routerLink="" class="loginBtn">تأكيد</a>
+        </div>
+    </form>
+    
+    <h6 class="register">  لديك حساب بالفعل
+        <a routerLink="/login">  تسجيل الدخول  </a>
+    </h6> 
+    </div>
+
+</section>
