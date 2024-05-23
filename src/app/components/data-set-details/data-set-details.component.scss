@@ -1,209 +1,229 @@
-:host ::ng-deep {
-  .main {
-    background-color: #f8fafa;
+section{
+  background-color: rgb(248,250,250);
+  padding: 30px;
+  overflow-x: hidden;
+}
+.minstry{
+  width: 330px;
 
-    .cardd {
-      background-color: white;
-      border-radius: 12px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
 
-      img {
-        width: 25%;
-      }
-      h6 {
-        font-family: Bigshot One;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 25.15px;
-        padding-right: 15px;
-      }
-      p {
-        font-family: Bigshot One;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-        color: #6a7a7e;
-        padding-right: 15px;
-      }
-    }
-    .cardd2 {
-      background-color: white;
-      border-radius: 12px;
+}
+.share{
+width: 330px;
+height: 205.72px;
+border-radius: 12px;
+opacity: 0px;
+box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
 
-      span {
-        font-family: Bigshot One;
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 25.15px;
-        text-align: right;
-      }
+}
+.rate{
+  width: 330px;
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 12px;
 
-      .social-icon {
-        margin-top: 20px;
-        background-color: #1da1f2;
-        text-align: center;
-        width: 40px;
-        border-radius: 5px;
-        color: white;
-        margin-left: 10px;
+}
+.rate h5 ,.share h4{
+font-family: Bigshot One;
+font-size: 24px;
+font-weight: 400;
+line-height: 25.15px;
+text-align: right;
+color: rgba(41, 59, 64, 1);
+}
+.detail{
+font-family: Bigshot One;
+font-size: 32px;
+font-weight: 600;
+line-height: 33.54px;
+text-align: right;
+color: rgba(41, 59, 64, 1);
+margin-bottom: 25px;
+}
+.data{
+  font-family: Bigshot One;
+font-size: 20px;
+font-weight: 500;
+line-height: 18.86px;
+text-align: right;
+color: rgba(106, 122, 126, 1);
+}
+.title h4{
+  font-family: Bigshot One;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 20.96px;
+  text-align: right;
+  color: rgba(41, 59, 64, 1);
+}
+.roles{
+font-family: Bigshot One;
+font-size: 18px;
+font-weight: 400;
+line-height: 18.86px;
+text-align: right;
+color: rgba(106, 122, 126, 1);    
+}
+.item{
+width: 1038px;
+height: 73.6px;
+opacity: 0px;
+border: 1px;
+border-radius: 12px;
+box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
+padding: 15px 25px;
+}
+.content h5{
+font-family: Bigshot One;
+font-size: 18px;
+font-weight: 400;
+line-height: 22.86px;
+text-align: right;
+letter-spacing: 1px;
+color: rgba(106, 122, 126, 1);
+}
+.content a{
+  text-decoration: none;
+  width: 72px;
+  height: 32px;
+  border-radius: 16px ;
+  opacity: 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;  
+}
+.XLSX{
+border: 1px solid rgba(97, 136, 48, 1);
+color: rgba(97, 136, 48, 1); 
+}
+.CSV{
+  border: 1px solid rgba(45, 101, 84, 1);
+  color:rgba(45, 101, 84, 1);
+}
+.JSON{
+  border: 1px solid rgba(56, 124, 173, 1);
+  color: rgba(56, 124, 173, 1);
+}
+.XML{
+  border: 1px solid rgba(232, 126, 21, 1);
+  color: rgba(232, 126, 21, 1);
+}
+.download  {
+display: flex;
+width: 106.56px;
+height: 32px;
+gap: 0px;
+border-radius: 16px;
+opacity: 0px;
+background-color: rgba(97, 136, 48, 1);
+justify-content: center;
+align-items: center;  
+}
+.actions a{
+  text-decoration: none;
+  color: #fff;
+}
+.display{
+  display: flex;
+  width: 106.56px;
+  height: 32px;
+  gap: 0px;
+  border-radius: 16px;
+  opacity: 0px;
+  justify-content:center;
+  align-items: center;  
+  border: 1px solid rgba(48, 146, 85, 1);
+  color: rgba(48, 146, 85, 1) !important;
+}
+.actions{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img{
 
-        i {
-          line-height: 0px !important;
-          font-size: 18px;
-        }
-      }
-      .facebook {
-        background-color: #3c579e;
-      }
-      .linkedin {
-        background-color: #007bb5;
-      }
-      .whatsapp {
-        background-color: #28d246;
-      }
-    }
-    .cardd3 {
-      background-color: white;
-      border-radius: 12px;
+}
+.img img{
+box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.04);
+width: 1038px;
+height: 430.25px; 
+border-radius: 12px;
 
-      span {
-        font-family: Bigshot One;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 25.15px;
-        text-align: right;
-        color: #293b40;
-      }
+}
+.slogntitle h4{
+font-family: Bigshot One;
+font-size: 24px;
+font-weight: 500;
+line-height: 20.96px;
+text-align: right;
 
-      .rating-star {
-        .p-rating-icon-active {
-          width: 24px;
-          height: 24px;
-          color: gold;
-        }
-      }
-    }
-    .textt {
-      h5 {
-        font-family: Bigshot One;
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 33.54px;
-        text-align: right;
-        color: #293b40;
-      }
-      p {
-        font-family: Bigshot One;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 30px;
-        text-align: right;
-        color: #6a7a7e;
-      }
-    }
-    .data {
-      display: flex;
-      align-items: center;
+}
+.slogns{
+width: 432px;
+height: 48px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.slogns input{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 96px;
+height: 48px;   
+border: 1px solid rgba(213, 215, 221, 1);
+color: rgba(41, 59, 64, 1);
+font-family: Bigshot One;
+font-size: 16px;
+font-weight: 400;
+border-radius: 27.34px ;
+line-height: 16.77px;
+text-align: center;
 
-      img {
-        width: 18px;
-        height: 18px;
-      }
-      span {
-        font-family: Bigshot One;
-        font-size: 20px;
-        font-weight: 400;
-        text-align: right;
-        padding-right: 5px;
-      }
-    }
-    .data2 {
-      span {
-        font-family: Bigshot One;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 18.86px;
-        text-align: right;
-        color: #6a7a7e;
-      }
-    }
-    .box {
-      background-color: #ffffff;
-      height: 73px;
-      border-radius: 12px;
-      box-shadow: black inset 10px;
-      display: flex;
-      align-items: center;
-    
+}
+.moreInfo h5{
+  font-family: Bigshot One;
+font-size: 24px;
+font-weight: 500;
+line-height: 20.96px;
+text-align: right;
+color: rgba(41, 59, 64, 1);
 
-      .xlsx {
-        width: 72px;
-        height: 32px;
-        border-radius: 16px;
-        border: 1px solid #618830;
-        text-align: center;
-        color: #618830;
-      }
-      .csv {
-         width: 72px;
-         height: 32px;
-         border-radius: 16px;
-         border: 1px solid #2D6554;
-         text-align: center;
-         color: #2D6554;
-      }
-      .json {
-         width: 72px;
-         height: 32px;
-         border-radius: 16px;
-         border: 1px solid #387CAD;
-         text-align: center;
-         color: #387CAD;
-      }
-      .XML {
-         width: 72px;
-         height: 32px;
-         border-radius: 16px;
-         border: 1px solid #E87E15;
-         text-align: center;
-         color: #E87E15;
-      }
-      p {
-        font-family: Bigshot One;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 18.86px;
-        text-align: right;
-        color: #6a7a7e;
-        padding-top: 20px;
-        padding-right: 20px;
-      }
-    }
-    .box-btn {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 200px;
-      .butn1 {
-         background-color: #618830;
-         color: white;
-         border-radius: 20px;
-         border: 0;
-         padding: 6px 12px;
-      }
-      .butn2 {
-         background-color: white;
-         color: #618830;
-         border-radius: 20px;
-         border:1px solid #618830;
-         padding: 6px 12px;
-      }
-    }
-    .box-map {
-     background-image: url('../../../assets/images/map.png');
-     background-position: center center;
-     background-size: cover;
-     height: 430.25px;
-     border-radius: 10px;
-    }
-  }
+}
+.info{
+width: 1041.11px;
+height: 73.6px;
+border-radius: 12px ;
+opacity: 0px;
+box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.04);
+background-color: rgba(255, 255, 255, 1);
+margin: 20px 0px;
+padding: 15px 25px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.info-box{
+width: 50%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.info-box h5{
+font-family: Bigshot One;
+font-size: 20px;
+font-weight: 600;
+line-height: 20.96px;
+text-align: right;
+color: rgba(41, 59, 64, 1);
+}
+.info-box h6{
+font-family: Bigshot One;
+font-size: 20px;
+font-weight: 400;
+line-height: 20.96px;
+text-align: right;
+color: rgba(106, 122, 126, 1);
+
 }
