@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'publisher', component: PublisherComponent },
   { path: 'sele-subject', component: SeleSubjectComponent },
   {path:'data-set', component : DataSetDetailsComponent},
+  {path:'publishers', component : PublisherComponent},
 ];
 
 @NgModule({
