@@ -24,6 +24,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { CodeOfRegisterComponent } from './components/code-of-register/code-of-register.component';
 import { ForgetPassComponent } from './components/forget-pass/forget-pass.component';
+import { NewpasswordComponent } from './components/newpassword/newpassword.component';
 
 
 
@@ -44,6 +45,7 @@ import { ForgetPassComponent } from './components/forget-pass/forget-pass.compon
     RegisterComponent,
     CodeOfRegisterComponent,
     ForgetPassComponent,
+    NewpasswordComponent,
    
     
   ],

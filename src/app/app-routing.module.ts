@@ -10,6 +10,7 @@ import { CodeOfRegisterComponent } from './components/code-of-register/code-of-r
 import { ForgetPassComponent } from './components/forget-pass/forget-pass.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
+import { NewpasswordComponent } from './components/newpassword/newpassword.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path:'register', component : RegisterComponent},
   {path:'forgetPassword', component : ForgetPassComponent},
   {path:'code', component : CodeOfRegisterComponent},
+  {path:'NewPassword', component : NewpasswordComponent},
   
 ];
 
