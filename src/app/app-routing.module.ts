@@ -17,7 +17,6 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'data-catalog', component: DataCatalogComponent },
   { path: 'subject', component: SubjectComponent },
-  { path: 'publisher', component: PublisherComponent },
   { path: 'sele-subject', component: SeleSubjectComponent },
   {path:'data-set', component : DataSetDetailsComponent},
   {path:'publishers', component : PublisherComponent},
