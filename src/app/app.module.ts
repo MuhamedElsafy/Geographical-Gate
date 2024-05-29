@@ -25,8 +25,19 @@ import { RegisterComponent } from './components/register/register.component';
 import { CodeOfRegisterComponent } from './components/code-of-register/code-of-register.component';
 import { ForgetPassComponent } from './components/forget-pass/forget-pass.component';
 import { NewpasswordComponent } from './components/newpassword/newpassword.component';
-
-
+import { AddDataComponent } from './components/add-data/add-data.component';
+import { ChipsModule } from 'primeng/chips';
+import { DropdownModule } from 'primeng/dropdown';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EditorModule } from 'primeng/editor';
+import { DialogModule } from 'primeng/dialog';
+import { FileUploadModule } from 'primeng/fileupload';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastModule } from 'primeng/toast';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { AddPublisherComponent } from './components/add-publisher/add-publisher.component';
+import { SettingPageComponent } from './components/setting-page/setting-page.component';
+import { TabViewModule } from 'primeng/tabview';
 
 
 
@@ -46,6 +57,9 @@ import { NewpasswordComponent } from './components/newpassword/newpassword.compo
     CodeOfRegisterComponent,
     ForgetPassComponent,
     NewpasswordComponent,
+    AddDataComponent,
+    AddPublisherComponent,
+    SettingPageComponent,
    
     
   ],
@@ -63,7 +77,16 @@ import { NewpasswordComponent } from './components/newpassword/newpassword.compo
     RatingModule,
     PasswordModule,
     InputOtpModule,
-
+    ChipsModule,
+    DropdownModule,
+    BrowserAnimationsModule,
+    EditorModule,
+    DialogModule,
+    FileUploadModule,
+    HttpClientModule,
+    ToastModule,
+    InputTextareaModule,
+    TabViewModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

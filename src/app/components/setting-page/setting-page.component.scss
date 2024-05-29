@@ -1,0 +1,87 @@
+:host ::ng-deep {
+  .main {
+    background-color: #f8fafa;
+  }
+  .p-tabview-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8fafa;
+
+    li.p-highlight .p-tabview-nav-link {
+      border-color: #309255;
+      transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .p-tabview-title {
+      color: gray;
+      font-family: Bigshot One;
+      font-size: 17px;
+      font-weight: 400;
+    }
+    a {
+      text-decoration: none;
+      background-color: #f8fafa;
+    }
+  }
+  .header-tit {
+    background-color: #f8fafa;
+    h6 {
+      font-family: Bigshot One;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 25.15px;
+      text-align: center;
+      color: #2c2b4b;
+    }
+    .p-button-success {
+      background-color: #76bc43;
+      padding: 8px 50px;
+      border-radius: 14px;
+    }
+  }
+  .p-tabview .p-tabview-panels {
+    background-color: #f8fafa;
+  }
+
+  .p-inputtext {
+    width: 100%;
+  }
+  .tool {
+    height: 50px;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+    background-color: white;
+    img {
+      width: 20px;
+    }
+    p {
+      font-family: Bigshot One;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 37px;
+      color: #606060;
+      margin: 16px;
+    }
+  }
+  .info {
+    background-color: white;
+    box-shadow: 1px 1px 25px -15px grey;
+    padding: 35px;
+    border-radius: 12px;
+    .p-button-success {
+      width: 90px;
+      height: 30px;
+      border-radius: 15px;
+      border: none;
+      background-color: #618830;
+    }
+    .p-button-danger {
+      width: 90px;
+      height: 30px;
+      border-radius: 15px;
+      border: 1px solid red;
+      color: red;
+
+      background-color: transparent;
+    }
+  }
+}

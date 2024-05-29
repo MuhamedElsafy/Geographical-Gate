@@ -1,0 +1,63 @@
+:host ::ng-deep {
+  .main {
+    background-color: #f8fafa;
+    h5 {
+      font-family: DIN Next LT Arabic;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 44.1px;
+    }
+    .la-label {
+      font-family: Bigshot One;
+      font-size: 15px;
+      font-weight: 500;
+      color: #344054;
+    }
+    .in-eng {
+      text-align: end;
+    }
+    .p-fileupload-buttonbar {
+      display: none;
+    }
+    .p-fileupload-content {
+      border-radius: 12px;
+      border: 1px dashed rgba(128, 128, 128, 0.479);
+      background-color: transparent;
+    }
+    .p-input-wrapper {
+      width: 100%;
+      .p-chips-multiple-container {
+        width: 100%;
+        border: none;
+      }
+    }
+    .p-chips-token {
+      background-color: #c2ead2;
+      color: #235035;
+      .p-chips-token-label {
+        padding-left: 15px;
+      }
+      .p-chips-token-icon {
+        margin: 0;
+      }
+    }
+    .p-button-success{
+      padding: 8px 50px;
+      border-radius: 14px;
+      border: none;
+      background-color: #76BC43;
+    }
+    .p-button-outlined{
+      padding: 8px 50px;
+      border-radius: 14px;
+      color: gray;
+    }
+    .file-uploded {
+      background-color: transparent !important;
+      border: none !important;
+    }
+    .p-progressbar {
+      display: none;
+    }
+  }
+}
