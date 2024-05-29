@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class DataSetDetailsComponent {
   value: number = 4;
+  visible: boolean = false;
+  value2!: string;
+  showDialog() {
+      this.visible = true;
+  }
 }

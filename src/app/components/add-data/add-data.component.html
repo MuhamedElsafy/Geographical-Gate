@@ -1,0 +1,218 @@
+<section class=" main px-8 py-5">
+
+    <div class="grid ">
+        <div class="col-12">
+            <h5>اضافة مجموعة بيانات</h5>
+        </div>
+        <div class="col-6">
+            <label for="input" class="la-label d-block">الاسم</label>
+            <input type="text" pInputText placeholder="اسم مجموعة البيانات" />
+        </div>
+        <div class="col-6">
+            <label for="input" class="la-label d-block"> الاسم بالانجليزية</label>
+            <input type="text" class="in-eng" pInputText placeholder="Data Name will be here" />
+        </div>
+        <div class="col-12">
+            <label for="input" class="la-label d-block">نبذة عن مجموعة البيانات</label>
+            <input type="text" pInputText placeholder="اكتب هنا.." />
+        </div>
+        <div class="col-6">
+            <label for="input" class="la-label d-block">الاسم</label>
+            <p-chips [(ngModel)]="values" placeholder="اضافة جديدة.." />
+        </div>
+        <div class="col-6">
+            <label for="input" class="la-label d-block">الاقسام</label>
+            <p-dropdown [options]="cities" [(ngModel)]="selectedCity" optionLabel="name"
+                placeholder="اختر القسم/Choose Section" />
+        </div>
+    </div>
+    <div class="grid">
+
+        <div class="col-12">
+            <div class="p-box flex align-items-center justify-content-between px-2">
+                <div class="flex align-items-center">
+                    <div class="d-json ml-3">
+                        <span>JSON</span>
+                    </div>
+                    <P>اسم الملف الكامل يكون في هذه المساحة ويفضل ان يكون سطر واحد كامل فقط</P>
+                </div>
+                <div>
+                    <p-button label="حذف" [outlined]="true" severity="danger" />
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="p-box flex align-items-center justify-content-between px-2">
+                <div class="flex align-items-center">
+                    <div class="d-json ml-3">
+                        <span>JSON</span>
+                    </div>
+                    <P>اسم الملف الكامل يكون في هذه المساحة ويفضل ان يكون سطر واحد كامل فقط</P>
+                </div>
+                <div>
+                    <p-button label="حذف" [outlined]="true" severity="danger" />
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="p-box flex align-items-center justify-content-between px-2">
+                <div class="flex align-items-center">
+                    <div class="d-json ml-3">
+                        <span>JSON</span>
+                    </div>
+                    <P>اسم الملف الكامل يكون في هذه المساحة ويفضل ان يكون سطر واحد كامل فقط</P>
+                </div>
+                <div>
+                    <p-button label="حذف" [outlined]="true" severity="danger" />
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <a class="a-link" (click)="showDialog()">اضافة مصدر بيانات جديد</a>
+
+            <p-dialog header="Edit Profile" [modal]="true" [(visible)]="visible" [style]="{ width: '40rem' }">
+                <div class="grid">
+                    <div class="col-6">
+                        <label for="input" class="la-label d-block">الاسم</label>
+                        <input type="text" pInputText placeholder="اسم مجموعة البيانات" />
+                    </div>
+                    <div class="col-6">
+                        <label for="input" class="la-label d-block"> الاسم بالانجليزية</label>
+                        <input type="text" class="in-eng" pInputText placeholder="Data Name will be here" />
+                    </div>
+                    <div class="col-6">
+                        <label for="input" class="la-label d-block">الاقسام</label>
+                        <p-dropdown [options]="cities" [(ngModel)]="selectedCity" optionLabel="name"
+                            placeholder="اختر القسم/Choose Section" />
+                    </div>
+                    <div class="col-12">
+                        <span style="font-size: 20px; font-family: Bigshot One; color: #344054;">او</span>
+                    </div>
+                    <div class="col-12">
+                        <p style="font-size: 14px; color: #344054;">قم برفع ملف من جهازك مثال(PDF - XLS - DOC - XLM)
+                        </p>
+                        <p-toast />
+                        <p-fileUpload name="myfile[]" url="https://www.primefaces.org/cdn/api/upload.php"
+                            [multiple]="true" accept="image/*" (onUpload)="onTemplatedUpload()"
+                            (onSelect)="onSelectedFiles($event)">
+                            <ng-template pTemplate="content" let-files let-uploadedFiles="uploadedFiles"
+                                let-removeFileCallback="removeFileCallback"
+                                let-removeUploadedFileCallback="removeUploadedFileCallback">
+                                <div *ngIf="files?.length > 0">
+                                    <h5>Pending</h5>
+                                    <div class="flex flex-wrap p-0 sm:p-5 gap-5">
+                                        <div *ngFor="let file of files; let i = index"
+                                            class="card m-0 px-6 flex flex-column border-1 surface-border align-items-center gap-3">
+                                            <div>
+                                                <img role="presentation" [alt]="file.name" [src]="file.objectURL"
+                                                    width="100" height="50" />
+                                            </div>
+                                            <span class="font-semibold">{{ file.name }}</span>
+                                            <div>{{ formatSize(file.size) }}</div>
+                                            <p-badge value="Pending" severity="warning" />
+                                            <p-button icon="pi pi-times"
+                                                (click)="onRemoveTemplatingFile($event, file, removeFileCallback, index)"
+                                                [outlined]="true" [rounded]="true" severity="danger" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div *ngIf="uploadedFiles?.length > 0">
+                                    <h5>Completed</h5>
+                                    <div class="flex flex-wrap p-0 sm:p-5 gap-5">
+                                        <div *ngFor="let file of uploadedFiles; let i = index"
+                                            class="card m-0 px-6 flex flex-column border-1 surface-border align-items-center gap-3">
+                                            <div>
+                                                <img role="presentation" [alt]="file.name" [src]="file.objectURL"
+                                                    width="100" height="50" />
+                                            </div>
+                                            <span class="font-semibold">{{ file.name }}</span>
+                                            <div>{{ formatSize(file.size) }}</div>
+                                            <p-badge value="Completed" class="mt-3" severity="success" />
+                                            <p-button icon="pi pi-times" (onClick)="removeUploadedFileCallback(index)"
+                                                [outlined]="true" [rounded]="true" severity="danger" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                            <ng-template pTemplate="file"> </ng-template>
+                            <ng-template pTemplate="empty">
+                                <div class="flex align-items-center justify-content-center flex-column">
+                                    <i
+                                        class="pi pi-cloud-upload border-2 border-circle p-5 text-8xl text-400 border-400"></i>
+                                    <p class="mt-4 mb-0">Drag and drop files to here to upload.</p>
+                                </div>
+                            </ng-template>
+                        </p-fileUpload>
+                    </div>
+                </div>
+            </p-dialog>
+
+
+        </div>
+
+    </div>
+
+    <div class="grid pt-2">
+        <div class="col-12">
+            <label for="input" class="la-label d-block">نص الكتابة الحر</label>
+            <p-editor [(ngModel)]="text" [style]="{ height: '320px' }" />
+        </div>
+    </div>
+
+    <div class="grid mt-3">
+        <div class="col-12">
+            <label for="input" class="la-label d-block">المعلومات الاضافية</label>
+            <div class="p-box flex align-items-center justify-content-between px-2">
+
+                <span class="s-titl ml-6">الفئة</span>
+                <p>مالية</p>
+
+                <p-button label="حذف" [outlined]="true" severity="danger" />
+
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="p-box flex align-items-center justify-content-between px-2">
+                <span class="s-titl ">مالك البيانات</span>
+                <p>وزارة</p>
+
+                <p-button label="حذف" [outlined]="true" severity="danger" />
+
+            </div>
+        </div>
+
+        <div class="col-12">
+            <a class="a-link" (click)=" showDialog2()">اضافة بيانات اضافية</a>
+
+            <p-dialog header="Edit Profile" [modal]="true" [(visible)]="visible2" [style]="{ width: '40rem' }">
+                <div class="grid">
+                    <div class="col-6">
+                        <label for="input" class="la-label d-block">الاسم</label>
+                        <input type="text" pInputText placeholder="اسم مجموعة البيانات" />
+                    </div>
+                    <div class="col-6">
+                        <label for="input" class="la-label d-block"> الاسم بالانجليزية</label>
+                        <input type="text" class="in-eng" pInputText placeholder="Data Name will be here" />
+                    </div>
+                    <div class="col-6">
+                        <label for="input" class="la-label d-block">وصف الحقل عربي</label>
+                        <textarea rows="5" cols="30" placeholder="اكتب الوصف هنا" pInputTextarea  [(ngModel)]="value2"></textarea>
+                    </div>
+                    <div class="col-6">
+                        <label for="input" class="la-label d-block">وصف الحقل انجليزي</label>
+                        <textarea rows="5" cols="30" class="in-eng" placeholder="Write Descriptions here" pInputTextarea  [(ngModel)]="value3" ></textarea>
+                    </div>
+                    <div class= "col-12 pt-4 flex justify-content-center">
+                        <button pButton pRipple label="اضافة" class="p-button-success"></button>
+                    </div>
+                </div>
+            </p-dialog>
+        </div>
+    </div>
+
+    <div class="btn-box flex justify-content-end mt-4">
+        <button pButton pRipple label="اضافة" class="p-button-success">
+        </button>
+    </div>
+
+</section>

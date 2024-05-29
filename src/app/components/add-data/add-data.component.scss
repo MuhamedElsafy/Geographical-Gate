@@ -1,0 +1,101 @@
+:host ::ng-deep {
+  .main {
+    background-color: #f8fafa;
+    h5 {
+      font-family: Bigshot One;
+      font-size: 28px;
+      font-weight: 500;
+      color: #2c2b4b;
+    }
+    .la-label {
+      font-family: Bigshot One;
+      font-size: 15px;
+      font-weight: 500;
+      color: #344054;
+    }
+    .p-inputtext {
+      width: 100%;
+      border: none;
+      box-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2);
+      ::placeholder {
+        color: #2d6554;
+      }
+    }
+    .in-eng {
+      text-align: end;
+    }
+    .p-chips {
+      width: 100%;
+
+      .p-chips-token {
+        background-color: transparent;
+        border: 1px solid #1b9111;
+      }
+      .p-chips-token-label {
+        padding-left: 10px;
+      }
+      .p-chips-token-icon {
+        margin-left: 0px;
+      }
+    }
+    .p-dropdown {
+      width: 100%;
+      border: none;
+    }
+    .p-box {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 1px 1px 2px rgba(88, 87, 87, 0.2);
+
+      .d-json {
+        border: 1px solid #387cad;
+        border-radius: 18px;
+        padding: 6px 14px;
+        color: #387cad;
+      }
+      p {
+        font-family: Bigshot One;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 18px 0px;
+        color: #6a7a7e;
+      }
+      .p-button-outlined {
+        padding: 5px 40px;
+        border-radius: 20px;
+      }
+
+      //   span in the sec grid
+      .s-titl {
+        font-family: Bigshot One;
+        font-size: 20px;
+        font-weight: 400;
+        color: #293b40;
+      }
+    }
+    .a-link {
+      font-family: Bigshot One;
+      font-size: 18px;
+      font-weight: 400;
+      color: #618830;
+      transition: all 300ms;
+    }
+
+    .p-dialog-header-icon {
+      display: none;
+    }
+    .p-dialog-content {
+      overflow-y: unset;
+    }
+    .p-button-success {
+      background-color: #76bc43;
+      padding: 8px 45px;
+      border: none;
+      border-radius: 12px;
+    }
+    .p-fileupload-buttonbar {
+        display: none;
+    }
+  }
+ 
+}
