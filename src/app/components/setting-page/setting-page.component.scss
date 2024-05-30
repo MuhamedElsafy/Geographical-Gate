@@ -40,6 +40,7 @@
   }
   .p-tabview .p-tabview-panels {
     background-color: #f8fafa;
+    padding: 0px;
   }
 
   .p-inputtext {
@@ -84,4 +85,167 @@
       background-color: transparent;
     }
   }
+
+// Add_New_Member
+
+.format{
+background-color: #fff;
+padding: 25px;
+border-radius: 16px;
+
+}
+.newmember h3{
+font-family: Bigshot One;
+font-size: 24px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0.10000000149011612px;
+color: rgba(41, 59, 64, 1);
+}
+.item{
+  margin-bottom: 20px;
+}
+.item label{
+font-family: Bigshot One;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+text-align: right;
+color: #808080;
+display: block;
+margin-bottom: 5px;
+}
+.item input{
+width: 50%;
+height: 44px;
+padding: 10px 14px 10px 14px;
+gap: 8px;
+border-radius: 8px ;
+opacity: 0px;
+border: 1px solid rgba(226, 230, 232, 1);
+box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+outline: none;
+color: rgba(44, 43, 75, 1);
+}
+.send{
+text-decoration: none;
+width: 203.38px;
+height: 62px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0px;
+border-radius: 12px ;
+opacity: 0px;
+background-color: rgba(118, 188, 67, 1);
+font-family: Bigshot One;
+font-size: 20px;
+font-weight: 400;
+line-height: 20.96px;
+color: rgba(255, 255, 255, 1);
+margin-top: 120px;
+margin-bottom: 20px;
+}
+//Drop down menus
+.menus h2{
+font-family: Bigshot One;
+font-size: 24px;
+font-weight: 400;
+line-height: 25.15px;
+text-align: right;
+color: rgba(44, 43, 75, 1);
+}
+.slogans{
+height: 259.78px;
+gap: 0px;
+border-radius: 16px;
+opacity: 0px;
+background-color: #fff;
+padding: 25px;
+}
+.slogans h3{
+font-family: Bigshot One;
+font-size: 24px;
+font-weight: 400;
+line-height: 25.15px;
+text-align: right;
+color: rgba(44, 43, 75, 1);
+}
+.itemsOfSlogan{
+  display: flex;
+}
+.itemsOfSlogan h5{
+ width: 96px;
+height: 48px;
+border-radius: 27.34px ;
+opacity: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid rgba(213, 215, 221, 1);
+font-family: "Readex Pro", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 23.52px;
+text-align: center;
+margin: 10px;
+}
+.add{
+width: 203.38px;
+height: 62px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0px;
+border-radius: 12px ;
+opacity: 0px;
+background-color: rgba(118, 188, 67, 1);
+font-family: "Readex Pro", sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 29.4px;
+text-align: right;
+text-decoration: none;
+color: #fff !important;
+margin-top: 50px;
+margin-right: 10px;
+}
+.departs{
+font-family: "Readex Pro", sans-serif;
+font-size: 24px;
+font-weight: 400;
+line-height: 35.28px;
+text-align: right;
+color: rgba(44, 43, 75, 1);
+}
+.direction{
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 25px;
+}
+.p-accordion-header-text{
+font-family: "Readex Pro", sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 0.28px;
+text-align: right;
+color: rgba(44, 43, 75, 1);
+}
+.p-accordion-header-link,.p-accordion-content{
+  text-decoration: none !important;
+background-color: #fff;
+border: 0px;
+}
+.p-icon{
+  display: none;
+}
+.depart{
+font-family: "Readex Pro", sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 29.4px;
+text-align: right;
+color: rgba(106, 122, 126, 1);
+}
 }

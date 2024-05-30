@@ -100,15 +100,91 @@
 
                 </p-tabPanel>
 
-                <p-tabPanel header=" اعداد النظام">
+                <p-tabPanel  header=" اعداد النظام">
 
                 </p-tabPanel>
 
-                <p-tabPanel header=" الاعضاء">
+                <p-tabPanel  header=" الاعضاء">
+                    <section class="Add_New_Member">
 
+                        <div class="newmember">
+                            <h3>اضافة عضو جديد</h3>
+                            <form >
+                                <div class="format">
+                                    <div class="item">
+                                        <label >البريد الإلكتروني</label>
+                                        <input type="text" >
+                                    </div>
+                                    <div class="item">
+                                        <label >اسم الحساب </label>
+                                        <input type="text" >
+                                    </div>
+                                    <div class="item">
+                                        <label >الدور </label>
+                                        <input type="text" >
+                                    </div>
+                      
+                                </div>
+                    
+                                <a class="send">ارسال</a>
+                            </form>
+                        </div>
+                    </section>
                 </p-tabPanel>
 
                 <p-tabPanel header="القواء المنسدله">
+
+                    <section class="Drop_down_menus">
+
+                        <div class="menus">
+
+                            <h2>القوائم المنسدلة</h2>
+                            <div class="slogans">
+                                <h3>الاوسمة</h3>
+                                <div class="itemsOfSlogan">
+                                    <h5>المالية</h5>
+                                    <h5>التعليم</h5>
+                                    <h5>الطاقة</h5>
+                                    <h5>الصحة</h5>
+                                </div>
+                                <a class="add">اضافة</a>
+                            </div>
+                            <div class="direction">
+                                <h2 class="departs">الاقسام</h2>
+
+                                <div>
+
+                                    <p-accordion [multiple]="true">
+                                        <p-accordionTab header="إسم الجهة">
+                         
+
+                                            <h3 class="depart">إسم القسم</h3>
+                                            <h3 class="depart">إسم القسم</h3>
+                                            <h3 class="depart">إسم القسم</h3>
+                                        </p-accordionTab>
+                                        <p-accordionTab header="إسم الجهة">
+                         
+
+                                            <h3 class="depart">إسم القسم</h3>
+                                            <h3 class="depart">إسم القسم</h3>
+                                            <h3 class="depart">إسم القسم</h3>
+                                        </p-accordionTab>
+                                        <p-accordionTab header="إسم الجهة">
+                         
+
+                                            <h3 class="depart">إسم القسم</h3>
+                                            <h3 class="depart">إسم القسم</h3>
+                                            <h3 class="depart">إسم القسم</h3>
+                                        </p-accordionTab>
+
+                                    </p-accordion>
+                                </div>
+                                <a class="add">اضافة</a>
+                            </div>
+                            
+                        </div>
+
+                    </section>
 
                 </p-tabPanel>
 
