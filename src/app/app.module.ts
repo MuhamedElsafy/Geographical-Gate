@@ -38,7 +38,7 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { AddPublisherComponent } from './components/add-publisher/add-publisher.component';
 import { SettingPageComponent } from './components/setting-page/setting-page.component';
 import { TabViewModule } from 'primeng/tabview';
-
+import { AccordionModule } from 'primeng/accordion';
 
 
 
@@ -60,10 +60,12 @@ import { TabViewModule } from 'primeng/tabview';
     AddDataComponent,
     AddPublisherComponent,
     SettingPageComponent,
+
    
     
   ],
   imports: [
+    AccordionModule,
     BrowserModule,
     AppRoutingModule,
     ButtonModule,
